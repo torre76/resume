@@ -1,0 +1,111 @@
+/**
+ * Media query used to guarantee mobile first of resume
+ *
+ * Gian Luca Dalla Torre <gianluca.dallatorre@me.com>
+ *
+ */
+
+ // iPad vertical
+ @media (max-width:768px) and (min-width:412px) {
+    #main-container {
+        width: 100%;
+
+        #resume-container {
+            width: 100%;
+        }
+
+        #content-container {
+            box-shadow: none;
+            margin-bottom: 100px;
+        }
+    }
+ }
+
+ // Smartphone
+ @media (max-width:412px) {
+    #main-container {
+        width: 100%;
+
+        #sticky-header-container {
+
+           #sticky-text-container {
+
+               padding-left: 10px;
+
+               h1 {
+                   font-size: 18px;
+                   font-weight: 700;
+
+                }
+                h2 {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 400;            
+                }
+           }
+        }
+
+        #resume-container {
+            width: 100%;
+        }
+
+        #content-container {
+            box-shadow: none;
+            padding: 60px 20px;
+
+            h2 {
+                border-left: 18px solid #444;
+             }
+
+             .text-section {
+                padding: 10px 8px 0 8px;
+             }
+
+            .table-section {
+                padding: 10px 8px 0 8px;
+
+                .table-row {
+                    display: block;
+                    border-bottom: 1px solid #eee;
+                    padding-bottom: 30px;
+
+                    .table-column {
+                        margin-top: 20px;
+
+                        &.table-short-width {
+                            width: 100%;
+                        }
+    
+                        &.table-long-width {
+                            width: 100%;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+ }
+
+ // Very old Smartphone
+ @media (max-width:360px) {
+    #main-container {
+
+        #sticky-header-container {
+   
+           #sticky-text-container {
+
+               h1 {
+                   font-size: 16px;
+                   font-weight: 700;
+
+                }
+                h2 {
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-weight: 400;            
+                }
+           }
+        }
+    }
+ }

@@ -1,0 +1,36 @@
+/**
+ *
+ * Media query used to make resume perfectly printable
+ *
+ * Gian Luca Dalla Torre <gianluca.dallatorre@icloud.com>
+ *
+ */
+
+ @media print {
+
+    html {
+        border: none;
+    }
+
+    #main-container {
+        width: 100%;
+
+        #resume-container {
+            width: 100%;
+        }
+
+        #resume-footer {
+            display: none;
+            height: 0px;
+        }
+
+        #sticky-header-container {
+            display: none !important;
+        }
+
+        #content-container {
+            border: none;
+            box-shadow: none;
+        }
+    }
+ }
